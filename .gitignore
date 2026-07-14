@@ -1,0 +1,25 @@
+# Dependencias
+node_modules/
+
+# Build de producción
+frontend/dist/
+
+# Datos persistidos en runtime (no trackear preinscripciones reales)
+backend/data/preinscripciones.json
+
+# Entorno
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor
+.vscode/
+.idea/
+
+# Sistema
+.DS_Store
+Thumbs.db

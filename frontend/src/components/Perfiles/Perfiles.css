@@ -1,0 +1,40 @@
+/* Perfiles.css */
+.perfiles { width: 100%; }
+.perfiles-tabs {
+  display: flex; flex-wrap: wrap; gap: var(--space-2);
+  margin-bottom: var(--space-6); border-bottom: 2px solid var(--color-border);
+}
+.perfiles-tab {
+  padding: var(--space-3) var(--space-6);
+  background: none; border: none; border-bottom: 3px solid transparent;
+  margin-bottom: -2px; font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold); color: var(--color-text-secondary);
+  cursor: pointer; transition: color var(--transition-fast), border-color var(--transition-fast);
+  font-family: inherit;
+}
+.perfiles-tab:hover { color: var(--color-primary); }
+.perfiles-tab.is-active { color: var(--color-primary); border-bottom-color: var(--color-primary); }
+.perfiles-panel {
+  padding: var(--space-8); background: var(--color-surface);
+  border: 1px solid var(--color-border); border-radius: var(--radius-xl);
+}
+.perfiles-desc {
+  font-size: var(--font-size-base); color: var(--color-text-secondary);
+  margin-bottom: var(--space-6); line-height: var(--line-height-relaxed);
+}
+.perfiles-list { display: flex; flex-direction: column; gap: var(--space-4); }
+.perfiles-item {
+  display: flex; align-items: flex-start; gap: var(--space-4);
+  font-size: var(--font-size-base); color: var(--color-text-primary);
+}
+.perfiles-bullet {
+  flex-shrink: 0; width: 28px; height: 28px;
+  background: var(--color-primary); color: #fff;
+  border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center;
+  font-size: var(--font-size-sm); font-weight: var(--font-weight-bold);
+}
+
+@media (max-width: 480px) {
+  .perfiles-tab { flex: 1; text-align: center; padding: var(--space-3) var(--space-2); font-size: var(--font-size-xs); }
+  .perfiles-panel { padding: var(--space-5); }
+}

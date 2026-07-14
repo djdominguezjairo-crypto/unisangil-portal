@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "version": "Plan de estudios vigente 2024-2026",
+    "vigencia": "2026",
+    "fuente": "Proyecto Educativo del Programa — UNISANGIL Yopal",
+    "urlFuente": "https://www.unisangil.edu.co",
+    "totalCreditos": 137,
+    "totalSemestres": 8,
+    "modalidadGrado": "Trabajo de Grado en alguna de las modalidades establecidas en el Reglamento Académico vigente",
+    "requisitoIdioma": "Certificación en inglés nivel B1 antes de iniciar el semestre 8",
+    "notaElectivas": "Las asignaturas electivas se eligen según oferta semestral. Consultar Registro Académico.",
+    "acreditacion": "Alta Calidad — Resolución No. 7575 del 8 de mayo de 2023"
+  },
+  "semestres": [
+    {
+      "nivel": 1,
+      "nombre": "Fundamentos",
+      "creditosSemestre": 17,
+      "creditosAcumulados": 17,
+      "prerequisitoNivel": null,
+      "asignaturas": [
+        { "id": "s1-01", "nombre": "Cálculo Diferencial",                    "creditos": 3, "esElectiva": false, "tipo": "Básica" },
+        { "id": "s1-02", "nombre": "Álgebra Lineal",                          "creditos": 3, "esElectiva": false, "tipo": "Básica" },
+        { "id": "s1-03", "nombre": "Lógica Matemática",                       "creditos": 3, "esElectiva": false, "tipo": "Básica" },
+        { "id": "s1-04", "nombre": "Fundamentos de Programación",             "creditos": 3, "esElectiva": false, "tipo": "Profesional" },
+        { "id": "s1-05", "nombre": "Introducción a la Ingeniería de Sistemas","creditos": 2, "esElectiva": false, "tipo": "Profesional" },
+        { "id": "s1-06", "nombre": "Comunicación Académica",                  "creditos": 2, "esElectiva": false, "tipo": "Formación Integral" },
+        { "id": "s1-07", "nombre": "Bienestar Universitario",                 "creditos": 1, "esElectiva": false, "tipo": "Formación Integral" }
+      ]
+    },
+    {
+      "nivel": 2,
+      "nombre": "Bases de la disciplina",
+      "creditosSemestre": 17,
+      "creditosAcumulados": 34,
+      "prerequisitoNivel": "Nivel I aprobado",
+      "asignaturas": [
+        { "id": "s2-01", "nombre": "Cálculo Integral",                        "creditos": 3, "esElectiva": false, "tipo": "Básica",            "prereqs": ["Cálculo Diferencial"] },
+        { "id": "s2-02", "nombre": "Programación Orientada a Objetos",        "creditos": 3, "esElectiva": false, "tipo": "Profesional",        "prereqs": ["Fundamentos de Programación"] },
+        { "id": "s2-03", "nombre": "Física General",                          "creditos": 3, "esElectiva": false, "tipo": "Básica" },
+        { "id": "s2-04", "nombre": "Arquitectura de Computadores",            "creditos": 3, "esElectiva": false, "tipo": "Profesional" },
+        { "id": "s2-05", "nombre": "Expresión en Inglés 1",                   "creditos": 2, "esElectiva": false, "tipo": "Formación Integral" },
+        { "id": "s2-06", "nombre": "Ética y Sociedad",                        "creditos": 2, "esElectiva": false, "tipo": "Formación Integral" },
+        { "id": "s2-07", "nombre": "Proyecto Integrador 1",                   "creditos": 1, "esElectiva": false, "tipo": "Profesional" }
+      ]
+    },
+    {
+      "nivel": 3,
+      "nombre": "Estructuras y sistemas",
+      "creditosSemestre": 17,
+      "creditosAcumulados": 51,
+      "prerequisitoNivel": "Nivel II aprobado",
+      "asignaturas": [
+        { "id": "s3-01", "nombre": "Matemáticas Discretas",                   "creditos": 3, "esElectiva": false, "tipo": "Básica",            "prereqs": ["Álgebra Lineal", "Lógica Matemática"] },
+        { "id": "s3-02", "nombre": "Estructuras de Datos",                    "creditos": 3, "esElectiva": false, "tipo": "Profesional",        "prereqs": ["Programación Orientada a Objetos"] },
+        { "id": "s3-03", "nombre": "Hardware y Sistemas Operativos",          "creditos": 3, "esElectiva": false, "tipo": "Profesional",        "prereqs": ["Arquitectura de Computadores"] },
+        { "id": "s3-04", "nombre": "Probabilidad y Estadística",              "creditos": 3, "esElectiva": false, "tipo": "Básica",            "prereqs": ["Cálculo Integral"] },
+        { "id": "s3-05", "nombre": "Diseño y Prototipado Digital",            "creditos": 2, "esElectiva": false, "tipo": "Profesional" },
+        { "id": "s3-06", "nombre": "Expresión en Inglés 2",                   "creditos": 2, "esElectiva": false, "tipo": "Formación Integral", "prereqs": ["Expresión en Inglés 1"] },
+        { "id": "s3-07", "nombre": "Proyecto Integrador 2",                   "creditos": 1, "esElectiva": false, "tipo": "Profesional",        "prereqs": ["Proyecto Integrador 1"] }
+      ]
+    },
+    {
+      "nivel": 4,
+      "nombre": "Datos y redes",
+      "creditosSemestre": 17,
+      "creditosAcumulados": 68,
+      "prerequisitoNivel": "Nivel III aprobado",
+      "asignaturas": [
+        { "id": "s4-01", "nombre": "Análisis y Diseño de Algoritmos",        "creditos": 3, "esElectiva": false, "tipo": "Profesional",        "prereqs": ["Estructuras de Datos", "Matemáticas Discretas"] },
+        { "id": "s4-02", "nombre": "Bases de Datos",                          "creditos": 3, "esElectiva": false, "tipo": "Profesional" },
+        { "id": "s4-03", "nombre": "Redes de Computadores 1",                 "creditos": 3, "esElectiva": false, "tipo": "Profesional",        "prereqs": ["Hardware y Sistemas Operativos"] },
+        { "id": "s4-04", "nombre": "Sistemas Bióticos y Medio Ambiente",      "creditos": 2, "esElectiva": false, "tipo": "Formación Integral" },
+        { "id": "s4-05", "nombre": "Electiva Complementaria 1",               "creditos": 2, "esElectiva": true,  "tipo": "Electiva Complementaria" },
+        { "id": "s4-06", "nombre": "Gestión Empresarial",                     "creditos": 2, "esElectiva": false, "tipo": "Formación Integral" },
+        { "id": "s4-07", "nombre": "Proyecto Integrador 3",                   "creditos": 2, "esElectiva": false, "tipo": "Profesional",        "prereqs": ["Proyecto Integrador 2"] }
+      ]
+    },
+    {
+      "nivel": 5,
+      "nombre": "Ingeniería y desarrollo",
+      "creditosSemestre": 17,
+      "creditosAcumulados": 85,
+      "prerequisitoNivel": "Nivel IV aprobado",
+      "asignaturas": [
+        { "id": "s5-01", "nombre": "Ingeniería de Software 1",                "creditos": 3, "esElectiva": false, "tipo": "Profesional",        "prereqs": ["Bases de Datos", "Análisis y Diseño de Algoritmos"] },
+        { "id": "s5-02", "nombre": "Administración de Bases de Datos",        "creditos": 3, "esElectiva": false, "tipo": "Profesional",        "prereqs": ["Bases de Datos"] },
+        { "id": "s5-03", "nombre": "Redes de Computadores 2",                 "creditos": 3, "esElectiva": false, "tipo": "Profesional",        "prereqs": ["Redes de Computadores 1"] },
+        { "id": "s5-04", "nombre": "Desarrollo Web",                          "creditos": 3, "esElectiva": false, "tipo": "Profesional" },
+        { "id": "s5-05", "nombre": "Electiva Complementaria 2",               "creditos": 2, "esElectiva": true,  "tipo": "Electiva Complementaria" },
+        { "id": "s5-06", "nombre": "Responsabilidad Social Empresarial",      "creditos": 2, "esElectiva": false, "tipo": "Formación Integral" },
+        { "id": "s5-07", "nombre": "Proyecto Integrador 4",                   "creditos": 1, "esElectiva": false, "tipo": "Profesional",        "prereqs": ["Proyecto Integrador 3"] }
+      ]
+    },
+    {
+      "nivel": 6,
+      "nombre": "Especialización y seguridad",
+      "creditosSemestre": 17,
+      "creditosAcumulados": 102,
+      "prerequisitoNivel": "Nivel V aprobado",
+      "asignaturas": [
+        { "id": "s6-01", "nombre": "Ingeniería de Software 2",                "creditos": 3, "esElectiva": false, "tipo": "Profesional",        "prereqs": ["Ingeniería de Software 1"] },
+        { "id": "s6-02", "nombre": "Seguridad Informática",                   "creditos": 3, "esElectiva": false, "tipo": "Profesional",        "prereqs": ["Redes de Computadores 2"] },
+        { "id": "s6-03", "nombre": "Inteligencia Artificial",                 "creditos": 3, "esElectiva": false, "tipo": "Profesional",        "prereqs": ["Análisis y Diseño de Algoritmos", "Probabilidad y Estadística"] },
+        { "id": "s6-04", "nombre": "Gestión de Proyectos de TI",              "creditos": 3, "esElectiva": false, "tipo": "Profesional" },
+        { "id": "s6-05", "nombre": "Formulación y Evaluación de Proyectos",   "creditos": 2, "esElectiva": false, "tipo": "Formación Integral" },
+        { "id": "s6-06", "nombre": "Electiva Profesional 1",                  "creditos": 2, "esElectiva": true,  "tipo": "Electiva Profesional" },
+        { "id": "s6-07", "nombre": "Proyecto Integrador 5",                   "creditos": 1, "esElectiva": false, "tipo": "Profesional",        "prereqs": ["Proyecto Integrador 4"] }
+      ]
+    },
+    {
+      "nivel": 7,
+      "nombre": "Arquitectura e innovación",
+      "creditosSemestre": 18,
+      "creditosAcumulados": 120,
+      "prerequisitoNivel": "Nivel VI aprobado",
+      "asignaturas": [
+        { "id": "s7-01", "nombre": "Arquitectura de Software",                "creditos": 3, "esElectiva": false, "tipo": "Profesional",        "prereqs": ["Ingeniería de Software 2"] },
+        { "id": "s7-02", "nombre": "Ciencia de Datos",                        "creditos": 3, "esElectiva": false, "tipo": "Profesional",        "prereqs": ["Inteligencia Artificial", "Probabilidad y Estadística"] },
+        { "id": "s7-03", "nombre": "Computación en la Nube",                  "creditos": 3, "esElectiva": false, "tipo": "Profesional",        "prereqs": ["Redes de Computadores 2"] },
+        { "id": "s7-04", "nombre": "Emprendimiento e Innovación",             "creditos": 2, "esElectiva": false, "tipo": "Formación Integral" },
+        { "id": "s7-05", "nombre": "Electiva Profesional 2",                  "creditos": 3, "esElectiva": true,  "tipo": "Electiva Profesional" },
+        { "id": "s7-06", "nombre": "Electiva de Movilidad",                   "creditos": 2, "esElectiva": true,  "tipo": "Electiva Movilidad", "nota": "Puede cursarse en otra IES mediante convenio" },
+        { "id": "s7-07", "nombre": "Proyecto Integrador 6",                   "creditos": 2, "esElectiva": false, "tipo": "Profesional",        "prereqs": ["Proyecto Integrador 5"] }
+      ]
+    },
+    {
+      "nivel": 8,
+      "nombre": "Grado y profundización",
+      "creditosSemestre": 17,
+      "creditosAcumulados": 137,
+      "prerequisitoNivel": "Nivel VII aprobado · Certificación de inglés B1",
+      "nota": "Datos confirmados en el PEP oficial (unisangil.edu.co). Vigencia: 2026. Circular REC-2025-003.",
+      "asignaturas": [
+        { "id": "s8-01", "nombre": "Trabajo de Grado 1",                      "creditos": 4, "esElectiva": false, "tipo": "Profesional",        "prereqs": ["Proyecto Integrador 6"] },
+        { "id": "s8-02", "nombre": "Trabajo de Grado 2",                      "creditos": 4, "esElectiva": false, "tipo": "Profesional",        "prereqs": ["Trabajo de Grado 1"] },
+        { "id": "s8-03", "nombre": "Gerencia de TI",                          "creditos": 3, "esElectiva": false, "tipo": "Profesional",        "prereqs": ["Gestión de Proyectos de TI"] },
+        { "id": "s8-04", "nombre": "Seminario de Ética Profesional",          "creditos": 3, "esElectiva": false, "tipo": "Formación Integral" },
+        { "id": "s8-05", "nombre": "Electiva Profesional 3",                  "creditos": 3, "esElectiva": true,  "tipo": "Electiva Profesional" }
+      ]
+    }
+  ]
+}
