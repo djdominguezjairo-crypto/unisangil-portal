@@ -6,7 +6,7 @@ import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import path from 'path';
-import { fileURLToPath } from 'url';
+
 import { programaRouter } from './routes/programa.js';
 import { admisionRouter } from './routes/admision.js';
 import { contactoRouter } from './routes/contacto.js';
@@ -18,7 +18,6 @@ import serverless from 'serverless-http';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 /* ── Middleware ─────────────────────────────────────────── */
 app.use(cors({ origin: ['http://localhost:5173', 'http://localhost:3001', 'https://portal-unisangil-yopal.netlify.app'] }));
@@ -46,7 +45,7 @@ app.get('/api/health', (_req, res) => {
 
 /* ── Frontend estático (solo desarrollo local) ──────────── */
 if (process.env.NODE_ENV !== 'production' && !process.env.NETLIFY) {
-  const distPath = path.resolve(__dirname, '../../frontend/dist');
+  const distPath = path.resolve(process.cwd(), '../frontend/dist');
   app.use(express.static(distPath));
 
   app.get('*', (_req, res) => {
