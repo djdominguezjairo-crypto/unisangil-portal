@@ -17,14 +17,14 @@
 import express from 'express';
 import fs from 'fs';
 import path from 'path';
-import { fileURLToPath } from 'url';
 import Anthropic from '@anthropic-ai/sdk';
 import 'dotenv/config';
 
 export const asistenteRouter = express.Router();
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const DOCS_DIR   = path.resolve(__dirname, '../../docs');
+const DOCS_DIR = process.env.NETLIFY
+  ? path.join(process.cwd(), 'backend/docs')
+  : path.join(process.cwd(), 'docs');
 const MODEL      = 'claude-haiku-4-5';
 const MAX_TOKENS = 512;
 const TOP_K      = 4;

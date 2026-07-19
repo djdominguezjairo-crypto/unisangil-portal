@@ -3,6 +3,10 @@
   publish = "frontend/dist"
   functions = "backend/src"
 
+[functions]
+  node_bundler = "esbuild"
+  included_files = ["backend/data/**", "backend/docs/**"]
+
 [build.environment]
   NODE_VERSION = "20"
   YARN_VERSION = "1.22.19"

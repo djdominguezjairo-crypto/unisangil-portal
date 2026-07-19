@@ -12,11 +12,12 @@
  */
 import { Router } from 'express';
 import { readFileSync } from 'fs';
-import { fileURLToPath } from 'url';
-import { join, dirname } from 'path';
+import { join } from 'path';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const DATA_PATH = join(__dirname, '../../data/plan.json');
+// Fix paths for Netlify bundling vs Local Execution
+const DATA_PATH = process.env.NETLIFY
+  ? join(process.cwd(), 'backend/data/plan.json')
+  : join(process.cwd(), 'data/plan.json');
 
 function leerPlan() {
   return JSON.parse(readFileSync(DATA_PATH, 'utf-8'));
