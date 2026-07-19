@@ -13,5 +13,12 @@
   },
   "devDependencies": {
     "concurrently": "^9.0.1"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.112.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "serverless-http": "^4.0.0"
   }
 }
