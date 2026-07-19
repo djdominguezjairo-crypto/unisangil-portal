@@ -6,6 +6,7 @@ import Perfiles from './components/Perfiles/index.js';
 import Admision from './components/Admision/index.js';
 import FormularioContacto from './components/FormularioContacto/index.js';
 import Contacto from './components/Contacto/index.js';
+import ChatWidget from './components/ChatWidget/index.jsx';
 import './styles/app.css';
 
 export default function App() {
@@ -178,6 +179,9 @@ export default function App() {
           </p>
         </div>
       </footer>
+
+      {/* ── ASISTENTE DE ADMISIONES (widget flotante) ── */}
+      <ChatWidget />
     </>
   );
 }
