@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { api } from '../../services/api.js';
 import './Admision.css';
 
 export default function Admision() {
@@ -6,8 +7,8 @@ export default function Admision() {
   const [cargando, setCargando] = useState(true);
 
   useEffect(() => {
-    fetch('/api/admision')
-      .then(r => r.json())
+    api
+      .getAdmision()
       .then(setDatos)
       .catch(() => {})
       .finally(() => setCargando(false));

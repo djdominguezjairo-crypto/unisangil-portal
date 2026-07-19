@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { api } from '../../services/api.js';
 import './PlanEstudios.css';
 
 export default function PlanEstudios() {
@@ -9,8 +10,8 @@ export default function PlanEstudios() {
   const [busqueda, setBusqueda] = useState('');
 
   useEffect(() => {
-    fetch('/api/plan')
-      .then(r => r.json())
+    api
+      .getPlan()
       .then(setPlan)
       .catch(() => setError('No se pudo cargar el plan de estudios.'))
       .finally(() => setCargando(false));

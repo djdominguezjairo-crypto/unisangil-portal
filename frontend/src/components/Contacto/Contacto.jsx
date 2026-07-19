@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import { api } from '../../services/api.js';
 import './Contacto.css';
 
 export default function Contacto() {
   const [datos, setDatos] = useState(null);
 
   useEffect(() => {
-    fetch('/api/contacto')
-      .then(r => r.json())
+    api
+      .getContacto()
       .then(setDatos)
       .catch(() => {});
   }, []);
